@@ -12,7 +12,7 @@ if not APIKEY:
 
 parser = argparse.ArgumentParser(description='Interact with the Punch++ REST API (read only mode)')
 parser.add_argument('endpoint', metavar='endpoint', type=str, help='endpoint to hit', choices=['analytics', 'results', 'notes', 'users'])
-parser.add_argument('-i, --id', dest='id', help='query for a single id for an action', type=int, metavar="ID")
+parser.add_argument('-i', dest='id', help='query for a single id for an action', type=int, metavar="ID")
 
 args = parser.parse_args()
 
